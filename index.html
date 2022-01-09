@@ -26,21 +26,22 @@
 
         <section id="sobre">
             <h2>Sobre</h2>
-            <p>Interface de Programação de Aplicações (português) cuja sigla API provém do Inglês Application Programming Interface, é um conjunto de rotinas e padrões estabelecidos por um software para a utilização das suas funcionalidades. Com o intuito de aprender como desenvolver uma api utilizando o php sem framework.                      </p>
+            <p>O projeto é uma API RESTful aonde é possível cadastrar, alterar, ler e excluir usuarios. Interface de Programação de Aplicações (português) cuja sigla API provém do Inglês Application Programming Interface, é um conjunto de rotinas e padrões estabelecidos por um software para a utilização das suas funcionalidades.</p>
+            <p>Para isso foi utilizado o Node junto com o Express.js para realizar o rotiamento das rotas da API que obtem os dados do mongodb atlas. a arquitetura é baseada no MVC e tambem foi trabalhado algumas regras de negocio internamente.</p>
         </section>
 
         <section id="introducao">
             <h2>Introdução</h2>
-            <p>API conta com 5 funcionalidades básicas: obter todos os registros, selecionar um unico registro, cadastrar registro, atualizar o registro e deletar o registro. Até o momento não foi implementado um sistema de autenticação para utilizar a API, possibilitando assim a utilização pública da mesma.</p>
+            <p>API conta com 5 funcionalidades básicas: obter todos os registros, selecionar um unico registro, cadastrar, atualizar e deletar o registro. Até o momento não foi implementado um sistema de autenticação para utilizar a API, possibilitando assim a utilização pública da mesma.</p>
         </section>
 
         <section id="tecnologia">
             <h2>Tecnologias</h2>
             <ul>
-                <li>PHP 7</li>
-                <li>URL amigável</li>
-                <li>SQL</li>
-                <li>Json</li>
+                <li>Node</li>
+                <li>Express.js</li>
+                <li>Dotenv</li>
+                <li>Mongoose</li>
             </ul>
         </section>
 
@@ -54,37 +55,37 @@
 
         <section id="rotas">
             <h2>Rotas</h2>
-            <p>É a mesma rota para todos o que diferencia é o método, para GET e DELETE é utilizado o id_usuarios do registro como parâmetro. Alem disso o unico serviço disponivel até o momento é "usuarios".</p>
+            <p>É a mesma rota para todos o que diferencia é o método, para GET e DELETE é utilizado o _id do registro como parâmetro. Alem disso o unico serviço disponivel até o momento é "usuarios".</p>
 
             <div class="grupo-rotas">
                 <p class="descricao-rota">Cadastra os dados no banco de dados</p>
                 <div class="rota">
                     <span class="metodo azul">POST</span>
-                    <p class="url borda-azul">http://localhost/api_crud/usuarios/</p>
+                    <p class="url borda-azul">https://seudominio.com/usuarios</p>
                 </div>
 
                 <p class="descricao-rota">Traz todos os registros</p>
                 <div class="rota">
                     <span class="metodo verde">GET</span>
-                    <p class="url borda-verde">http://localhost/api_crud/usuarios/</p>
+                    <p class="url borda-verde">https://seudominio.com/</p>
                 </div>
 
                 <p class="descricao-rota">Traz um registo específico (o caso em questão, vai trazer os dados referente ao id_usuarios 2)</p>
                 <div class="rota">
                     <span class="metodo verde">GET</span>
-                    <p class="url borda-verde">http://localhost/api_crud/usuarios/2</p>
+                    <p class="url borda-verde">https://seudominio.com/61d5a336536071e70982695b</p>
                 </div>
 
                 <p class="descricao-rota">Atualiza os dados no banco de dados. <strong>Aviso:</strong> na atualização do registro é obrigatorio o envio de todos os dados (id_usuarios, nome, idade, sexo, email, senha) mesmo aqueles que não sofrerão alteraçãoes.</p>
                 <div class="rota">
                     <span class="metodo amarelo">PUT</span>
-                    <p class="url borda-amarelo">http://localhost/api_crud/usuarios/</p>
+                    <p class="url borda-amarelo">https://seudominio.com/usuarios/</p>
                 </div>
 
                 <p class="descricao-rota">Excluir o registro baseado no id_usuarios (o caso em questão, vai excluir os dados referente ao id_usuarios 2)</p>
                 <div class="rota">
                     <span class="metodo vermelho">DELETE</span>
-                    <p class="url borda-vermelho">http://localhost/api_crud/usuarios/2</p>
+                    <p class="url borda-vermelho">https://seudominio.com/usuarios/61d5a336536071e70982695b</p>
                 </div>
 
             </div>
