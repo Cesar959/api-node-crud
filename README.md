@@ -9,15 +9,17 @@ Projeto API Node RESTful Crud (Create, Read, Update, Delete)
 
 ## Descrição
 
-O projeto é uma API RESTful aonde  é  possível cadastrar, alterar, ler e excluir usuarios. Interface de Programação de Aplicações (português) cuja sigla API provém do Inglês Application Programming Interface, é um conjunto de rotinas e padrões estabelecidos por um software para a utilização das suas funcionalidades. 
+O projeto é uma API RESTful aonde é possível cadastrar, alterar, ler e excluir usuários. Interface de Programação de Aplicações (português) cuja sigla API provém do Inglês Application Programming Interface, é um conjunto de rotinas e padrões estabelecidos por um software para a utilização das suas funcionalidades. 
 
-API conta com 5 funcionalidades básicas: obter todos os registros, selecionar um unico registro, cadastrar, atualizar e deletar o registro. Até o momento não foi implementado um sistema de autenticação para utilizar a API, possibilitando assim a utilização pública da mesma. 
+API conta com 5 funcionalidades básicas: obter todos os registros, selecionar um único registro, cadastrar, atualizar e deletar o registro. Até o momento não foi implementado um sistema de autenticação para utilizar a API, possibilitando assim a utilização pública da mesma. 
 
-Para isso foi utilizado o Node junto com o Express.js para realizar o rotiamento das rotas da API que obtem os dados do mongodb atlas. a arquitetura é baseada no MVC e tambem foi trabalhado algumas regras de negocio internamente. 
+Para isso foi utilizado o Node junto com o Express.js para realizar o roteamento das rotas da API que obtém os dados do mongodb atlas. A arquitetura é baseada no MVC e também foi trabalhado algumas regras de negócio internamente.  
 
 ## Rotas:
 
-É a mesma rota para todos o que diferencia é o método, para GET e DELETE é utilizado o _id do registro como parâmetro. Alem disso o unico serviço disponivel até o momento é "usuarios".
+É a mesma rota para todos o que diferencia é o método, para GET e DELETE é utilizado o _id do registro como parâmetro. Além disso o único serviço disponível até o momento é "usuários".
+
+**Aviso:** Os campos nome e email são obrigatórios  tanto no cadastramento e atualização do registro.
 
 ### POST
 Cadastra os dados no banco de dados
@@ -34,14 +36,14 @@ https://seudominio.com/
 ```
 
 ### GET
-Traz um registo específico (o caso em questão, vai trazer os dados referente ao id_usuarios 61d5a336536071e70982695b)
+Traz um registo específico (o caso em questão, vai trazer os dados referente ao _id 61d5a336536071e70982695b)
 
 ```bash  
 https://seudominio.com/61d5a336536071e70982695b
 ```
 
 ### PUT
-Atualiza os dados no banco de dados. **Aviso:** na atualização do registro é obrigatorio o envio dos seguinte dados (nome, email).
+Atualiza os dados no banco de dados. 
 
 ```bash  
 https://seudominio.com/usuarios/
@@ -57,17 +59,17 @@ https://seudominio.com/usuarios/61d5a336536071e70982695b
 
 ## Instalação Local
 
-Para executar esse projeto você precisara do  [Node](https://nodejs.org/en/).
+Para executar esse projeto você precisara do [Node](https://nodejs.org/en/).
 
 Por meio dele sera baixado todas as depedencias do projeto, depois de instalado execute os comandos abaixo na linha do terminal.
 
-1) Para baixa todas as dependencias do projeto
+1) para baixa todas as dependencias do projeto
 
 ```bash  
 npm install
 ```
 
-2) renomei o arquivo .envi-exemplo para .env, ele contem as variaveis de ambiente 
+2) altere o arquivo .envi-exemplo para .env, ele contém as variaveis de ambiente 
 que serão usadas no projeto.
 
 
@@ -93,7 +95,7 @@ SENHA_BANCO= "Senha para conectar ao banco de dados"
 CLUSTER = "Cloud que vai armazenar as informações"
 ```
 
-P.S: No caso em questão o projeto esta usando o [MongoDB Atlas](https://www.mongodb.com/atlas/database), por acaso estive usando outro banco de dados diferente faça a configuração para o proprio.
+P.S: No caso em questão o projeto está utilizando o [MongoDB Atlas](https://www.mongodb.com/atlas/database), por acaso estive usando outro banco de dados, faça a configuração para o proprio.
 
 
 ## Status do Projeto
@@ -131,12 +133,12 @@ P.S: No caso em questão o projeto esta usando o [MongoDB Atlas](https://www.mon
 
 ## Licença
 
-Este projeto está licenciado sob a licença MIT - consulte o arquivo  [LICENSE.md](LICENSE.md) para obter detalhes
+Este projeto está licenciado sob a licença MIT - consulte o arquivo [LICENSE.md](LICENSE.md) para obter detalhes
 
 
 ## Links
 
-* [Documentação](https://cesar959.github.io/api-crud/) - Link da Documentação
+* [Documentação](https://cesar959.github.io/api-node-crud-simples/) - Link da Documentação
 
 
 
