@@ -42,6 +42,7 @@ async function add(req, res) {
 
       await new Schema(usuario).save()
       .then(resultado => {
+          dados.status = "Sucesso"
           dados.metodo = "POST"
           dados.result = resultado
           res.status(200).json(dados);
