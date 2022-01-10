@@ -70,25 +70,50 @@
                     <p class="url borda-verde">https://seudominio.com/</p>
                 </div>
 
-                <p class="descricao-rota">Traz um registo específico (o caso em questão, vai trazer os dados referente ao id_usuarios 2)</p>
+                <p class="descricao-rota">Traz um registo específico (o caso em questão, vai trazer os dados referente ao _id 61d5a336536071e70982695b)</p>
                 <div class="rota">
                     <span class="metodo verde">GET</span>
                     <p class="url borda-verde">https://seudominio.com/61d5a336536071e70982695b</p>
                 </div>
 
-                <p class="descricao-rota">Atualiza os dados no banco de dados. <strong>Aviso:</strong> na atualização do registro é obrigatorio o envio de todos os dados (id_usuarios, nome, idade, sexo, email, senha) mesmo aqueles que não sofrerão alteraçãoes.</p>
+                <p class="descricao-rota">Atualiza os dados no banco de dados. <strong>Aviso:</strong> na atualização do registro é obrigatorio o envio dos seguinte dados (nome, email).</p>
                 <div class="rota">
                     <span class="metodo amarelo">PUT</span>
                     <p class="url borda-amarelo">https://seudominio.com/usuarios/</p>
                 </div>
 
-                <p class="descricao-rota">Excluir o registro baseado no id_usuarios (o caso em questão, vai excluir os dados referente ao id_usuarios 2)</p>
+                <p class="descricao-rota">Excluir o registro baseado no _id (o caso em questão, vai excluir os dados referente ao _id 61d5a336536071e70982695b)</p>
                 <div class="rota">
                     <span class="metodo vermelho">DELETE</span>
                     <p class="url borda-vermelho">https://seudominio.com/usuarios/61d5a336536071e70982695b</p>
                 </div>
 
             </div>
+        </section>
+
+        <section id="exemplo">
+            <h2>Exemplo de Codigo</h2>
+            <p>Abaixo tem um exemplo de código no formato para envio ou recebimento de dados, deve utilizar esses campos relatados no JSON para ser comunicar com o servidor. </p>
+            <pre>
+                {
+                    "nome": "RAFAEL Nelson Martins",
+                    "idade": 32,
+                    "data_nasc": "06-02-1998",
+                    "sexo": "Feminino",
+                    "signo": "Capricórnio",
+                    "mae": "Roberta Aparecida",
+                    "pai": "Márcio Levi Martins",
+                    "email": "Suzanasonmartins-79@splicenet.com.br",
+                    "cep": "20750537",
+                    "endereco": "Quadra SCLRN 716 Bloco F",
+                    "numero": 382,
+                    "bairro": "Asa Norte",
+                    "cidade": "Brasília",
+                    "estado": "DF",
+                    "telefone_fixo": "6127195720",
+                    "celular": "61988258485"
+                }
+            </pre>
         </section>
 
         <section id="mensagem-status">
@@ -103,7 +128,7 @@
 
 
     <footer>
-        <h5>DESENVOLVIMENTO POR </h5>
+        <h5>DESENVOLVIDO POR </h5>
         <h5>CESAR DOS SANTOS DE ALMEIDA</h5>
     </footer>
     

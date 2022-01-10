@@ -101,7 +101,7 @@ header
 {
     width: 100%;
     min-height: 80px;
-    background: #235789;
+    background: #3CCF51;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -335,6 +335,45 @@ header span
 }
 /* Rotas */
 
+/* Exemplo */
+
+#exemplo
+{
+   width: 100%;
+   text-align: left; 
+}
+
+#exemplo h2
+{
+    font-family:"Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+    margin-top: 60px;
+}
+
+#exemplo p 
+{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#exemplo pre
+{
+    background: white;
+    padding: 10px;
+    text-align: left;
+    color: green;
+    overflow-x: auto;
+}
+
+/* Exemplo */
 
 /* Mensagens de Status */
 
@@ -379,7 +418,7 @@ footer
     justify-content: center;
     align-items: center;
     margin-top: 80px;
-    background: #235789;
+    background: #3CCF51;
 }
 
 footer h5
@@ -545,6 +584,17 @@ footer h5
     }
 
     #rotas p
+    {
+        font-size: 16px;
+    }
+
+    #exemplo  h2 
+    {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    #exemplo p
     {
         font-size: 16px;
     }
