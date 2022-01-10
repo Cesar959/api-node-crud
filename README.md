@@ -41,7 +41,7 @@ https://seudominio.com/61d5a336536071e70982695b
 ```
 
 ### PUT
-Atualiza os dados no banco de dados. **Aviso:** na atualização do registro é obrigatorio o envio de todos os dados (id_usuarios, nome, idade, sexo, email, senha) mesmo aqueles que não sofrerão alteraçãoes. 
+Atualiza os dados no banco de dados. **Aviso:** na atualização do registro é obrigatorio o envio dos seguinte dados (nome, email).
 
 ```bash  
 https://seudominio.com/usuarios/
