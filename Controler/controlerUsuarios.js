@@ -148,7 +148,7 @@ async function remove(req, res, id) {
   .then(() =>{
     dados.status = "Sucesso"
     dados.metodo = "DELETE"
-    dados.result = registro || {mensagem: "Removido com sucesso _id:" + id}
+    dados.result =  {mensagem: "Removido com sucesso _id:" + id}
     res.status(200).json(dados);
   
   })
