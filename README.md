@@ -11,7 +11,7 @@ Projeto API Node RESTful Crud (Create, Read, Update, Delete)
 
 O projeto é uma API RESTful aonde é possível cadastrar, alterar, ler e excluir usuários. Interface de Programação de Aplicações (português) cuja sigla API provém do Inglês Application Programming Interface, é um conjunto de rotinas e padrões estabelecidos por um software para a utilização das suas funcionalidades. 
 
-API conta com 5 funcionalidades básicas: obter todos os registros, selecionar um único registro, cadastrar, atualizar e deletar o registro. Até o momento não foi implementado um sistema de autenticação para utilizar a API, possibilitando assim a utilização pública da mesma. 
+API conta com 5 funcionalidades básicas: obter todos os registros, selecionar um único registro, cadastrar, atualizar e deletar. Até o momento não foi implementado um sistema de autenticação para utilizar a API, possibilitando assim a utilização pública da mesma. 
 
 Para isso foi utilizado o Node junto com o Express.js para realizar o roteamento das rotas da API que obtém os dados do mongodb atlas. A arquitetura é baseada no MVC e também foi trabalhado algumas regras de negócio internamente. Na pasta DOC você encontra alguns registros prontos para efetuar teste na aplicação.
 
@@ -73,7 +73,7 @@ npm install
 que serão usadas no projeto.
 
 
-2) Edite as configurações padrão do arquivo .env
+3) Edite as configurações padrão do arquivo .env
 
 ```bash  
 PORTA = "Porta TCP aonde o servidor vai ser conectar"
@@ -96,6 +96,13 @@ CLUSTER = "Cloud que vai armazenar as informações"
 ```
 
 P.S: No caso em questão o projeto está utilizando o [MongoDB Atlas](https://www.mongodb.com/atlas/database), por acaso estive usando outro banco de dados, faça a configuração para o proprio.
+
+4) Execute o comando abaixo no terminal
+```bash 
+npm start
+```
+
+5) Acesse "http://localhost:PORTA/ (substititua PORTA pelo o valor definido no .env)
 
 
 ## Status do Projeto
