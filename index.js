@@ -17,9 +17,9 @@ mongoose.connect("mongodb+srv://" + process.env.USUARIO_BANCO + ":" + encodeURIC
     
     app.use(route)
 
-    app.listen(process.env.PORT, () => 
+    app.listen(process.env.PORTA, () => 
     {
-        console.log("Servidor Online");
+        console.log("Servidor Online", process.env.PORTA);
     })
 
 })
